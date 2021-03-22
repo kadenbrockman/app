@@ -1,0 +1,179 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+  font-size: 120%;
+  filter: none;
+  color: white;
+   background: radial-gradient(157.05% 486.15% at 4.49% 5.26%, #27BEFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #86DBFF, #86DBFF);
+  background-attachment: fixed;
+}
+
+.flex {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.card {
+  background: rgba(255, 255, 255, 0.3);
+  filter: none;
+  border-radius: 18.5429px;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 620px;
+  margin: 1em;
+  backdrop-filter: blur(20px);
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+.search-bar{
+  color: white;
+  padding: 2%;
+  margin: 10px;
+}
+.search {
+  display: flex;
+  color: white;
+  width: 96%;
+  max-width: 620px;
+  margin: auto;
+  background:none;
+  border-color: white;
+  border-style: none;
+  margin-top: 20px;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 2%;
+  margin: 10px;
+}
+
+input.search-bar {
+  border-bottom: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  padding: 0.4em 1em;
+  color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.452);
+  background: none;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(255, 255, 255);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+  
+}
+
+#state {
+  border: none;
+  border-radius: 25px;
+  height: 44px;
+  width: 75px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  padding: 2%;
+  margin: 10px;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  font-size: 350%;
+  line-height: 52px;
+  color: #FFFFFF;
+  text-align: center;
+ 
+}
+
+.upper {
+  align-items: center;
+  text-align: center;
+}
+.city {
+  margin: 0;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 0px 22.6667px 28.3333px rgba(0, 0, 0, 0.247);
+}
+
+.description {
+  text-transform: capitalize;
+  margin-top: 0;
+  font-size: 150%;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+  
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  
+}
+
+.icon {
+  width: 200px;
+  filter: drop-shadow(-7px 9px 20px rgba(0, 0, 0, 0.1));
+}
+.minmax{
+  display: inline;
+  text-align: center;
+  font-size: 75%;
+  line-height: 65%;
+}
+
+@media screen and (max-width: 600px){
+  body {
+    text-align: center;
+  }
+  .card {
+    margin: 4%;
+    height: 80%;
+  }
+}
