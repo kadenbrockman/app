@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="https://kadenbrockman.github.io/icons/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="upper">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <select name="State" id="state">
+        <option value="Wa">WA</option>
+      </select>
+      <button><i class="fas fa-search"></i></button>
+    </div>
+        <img src="icons/01d.png" alt="" class="icon" />
+        <h2 class="city">Weather in Seattle</h2>
+      </div>
+    <div class="flex">
+  <div class="card">
+    <div class="weather loading">
+      <h1 class="temp">64°F</h1>
+      <div class="minmax">
+      <p><span class="min_weather"></span> <i class="fas fa-arrow-alt-circle-down"></i> | <span><i class="fas fa-arrow-alt-circle-up"></i> <span class="max_weather"></span></span></p>
+      </div>
+      <div class="description"></div>
+      <div class="iconsinfo">
+      <p><i class="fas fa-tint"></i> | <span class="humidity">Humidity: 60%</span></p>
+      <p><i class="fas fa-wind"></i> | <span class="wind">Wind speed: 6.2 mi/h</span></p>
+      </div>
+    </div>
+  </div>
+  </div>  
+</body>
+
+</html>
