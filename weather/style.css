@@ -97,19 +97,6 @@ button:hover {
   
 }
 
-#state {
-  border: none;
-  border-radius: 25px;
-  height: 44px;
-  width: 75px;
-  outline: none;
-  background: #7c7c7c2b;
-  color: white;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  padding: 2%;
-  margin: 10px;
-}
 
 h1.temp {
   margin: 0;
